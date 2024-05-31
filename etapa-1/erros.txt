@@ -1,0 +1,5 @@
+2024-05-31 16:08:58,961 - ERROR - Erro inesperado: 'Valor da Transação'
+2024-05-31 16:10:00,076 - ERROR - Erro inesperado: 'Valor da Transação'
+2024-05-31 16:25:36,862 - ERROR - Erro inesperado: 'Valor da Transação'
+2024-05-31 16:27:05,054 - ERROR - Erro inesperado: 'Valor da Transação'
+2024-05-31 16:28:44,524 - ERROR - Erro inesperado: 'Valor da Transação'
