@@ -1,28 +1,69 @@
-Etapa 2: API Rest e Python
-Descrição do Projeto
-Nesta etapa do projeto, desenvolvemos um script Python que se conecta à API OpenWeatherMap para obter informações meteorológicas de uma cidade especificada pelo usuário. O script exibe a descrição do clima atual e a temperatura atual em graus Celsius ou Fahrenheit, de acordo com a preferência do usuário.
+# Clima
 
-Como Executar
-Pré-requisitos:
+Este script consulta a API do OpenWeatherMap para obter informações sobre o clima de uma cidade especificada pelo usuário.
 
-Certifique-se de ter o Python 3.x instalado no seu sistema. Você pode baixá-lo em python.org.
-É necessário ter uma chave de API da OpenWeatherMap para autenticar as solicitações. Você pode se inscrever para obter uma chave gratuita em OpenWeatherMap.
-Configuração:
+## Pré-requisitos
 
-Clone ou baixe o repositório deste projeto para o seu ambiente local.
-Instalação de Dependências:
+Antes de executar o script, certifique-se de ter instalado os seguintes itens:
 
-Este script não requer instalação adicional de pacotes Python além dos que já vêm com a instalação padrão.
-Execução do Script:
+- [Python 3.6+](https://www.python.org/downloads/)
+- [requests](https://pypi.org/project/requests/)
 
-Abra o terminal ou prompt de comando e navegue até o diretório onde o script Python (script.py) está localizado.
-Execute o script com o seguinte comando:
-Copiar código
-python script.py
-Utilização:
+## Instalação
 
-Siga as instruções fornecidas para digitar o nome da cidade, a chave de API da OpenWeatherMap e a unidade de temperatura desejada (Celsius 'C' ou Fahrenheit 'F').
-Observações
-Certifique-se de fornecer uma chave de API válida da OpenWeatherMap para obter resultados precisos.
-Caso o nome da cidade seja digitado incorretamente ou a chave da API seja inválida, o script fornecerá mensagens de erro apropriadas e orientará o usuário sobre o que fazer em seguida.
-O script registra erros em um arquivo de log chamado erros.txt para referência futura.
+### 1. Clonar o repositório (ou baixar o arquivo clima.py)
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+```
+
+### 2. Instalar as dependências
+
+Você pode instalar a biblioteca `requests` usando o `pip`. Abra o terminal e execute:
+
+```bash
+pip install requests
+```
+
+## Configuração
+
+### 3. Obter uma chave de API do OpenWeatherMap
+
+Você precisará de uma chave de API do OpenWeatherMap. Se você ainda não tem uma, pode se inscrever gratuitamente [aqui](https://home.openweathermap.org/users/sign_up).
+
+### 4. Atualizar a chave de API no script
+
+No arquivo `clima.py`, substitua `YOUR_API_KEY_HERE` pela sua chave de API. Encontre a linha com `chave_api = "15493ede9a83e0be32fd1b9dce9571ce"` e substitua `"15493ede9a83e0be32fd1b9dce9571ce"` pela sua chave.
+
+```python
+chave_api = "YOUR_API_KEY_HERE"
+```
+
+## Uso
+
+### 5. Executar o script
+
+No terminal, navegue até o diretório onde o arquivo `clima.py` está localizado e execute o seguinte comando:
+
+```bash
+python clima.py
+```
+
+### 6. Inserir o nome da cidade
+
+Quando solicitado, digite o nome da cidade para a qual você deseja obter informações sobre o clima.
+
+## Registro de Erros
+
+Erros durante a execução do script serão registrados no arquivo `erros_clima.txt`.
+
+## Exemplo
+
+```text
+Digite o nome da cidade: São Paulo
+Clima em São Paulo:
+Descrição: nublado
+Temperatura Atual: 22°C
+```
+

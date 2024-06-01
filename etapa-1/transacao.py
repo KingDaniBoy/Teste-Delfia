@@ -33,7 +33,7 @@ def processar_transacoes(input_file, output_file, valor_limite):
                     logging.error(f"Erro ao processar linha {row}: {e}")
                     print(f"Erro ao processar linha {row}: {e}")
 
-        # Verificar se há transações altas para salvar
+        # Verificar se tem transações altas para salvar
         if transacoes_altas:
             print(f"Encontradas {len(transacoes_altas)} transações acima de ${valor_limite}. Salvando no arquivo: {output_file}")
             try:
@@ -60,7 +60,7 @@ def processar_transacoes(input_file, output_file, valor_limite):
         logging.error(f"Erro inesperado: {e}")
         print(f"Ocorreu um erro inesperado: {e}")
 
-# Configurar os parâmetros do script com o caminho absoluto
+# Configurar os parâmetros do script utilizando o caminho dos seus arquivos
 input_file = r'C:\Users\Family\Documents\DANIEL\Teste-Delfia\etapa-1\transacoes.csv'
 output_file = r'C:\Users\Family\Documents\DANIEL\Teste-Delfia\etapa-1\transacoes_altas.csv'
 valor_limite = 1000.0
